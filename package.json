@@ -1,0 +1,26 @@
+{
+  "name": "dom-batch-wrapper",
+  "version": "0.1.0",
+  "devDependencies": {
+    "fastdom": "^0.8.4",
+    "mocha": "^1.21.4",
+    "raf": "^2.0.3",
+    "testling": "^1.7.0"
+  },
+  "testling": {
+    "files": "test/index.js",
+    "harness": "mocha",
+    "browsers": [
+      "ie/6..latest",
+      "firefox/24..latest",
+      "chrome/28..latest",
+      "opera/12.0",
+      "opera/15..latest",
+      "iphone/6..latest",
+      "safari/5.1..latest"
+    ]
+  },
+  "scripts": {
+    "test": "./node_modules/testling/bin/cmd.js"
+  }
+}
